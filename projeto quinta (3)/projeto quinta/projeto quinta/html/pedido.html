@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça Seu Pedido - Pizzaria Delícia</title>
+    <link rel="stylesheet" href="../css/pedido.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Delícia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pedido.html">Faça Seu Pedido</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Faça Seu Pedido</h2>
+        <form id="order-form">
+            <label for="pizza">Escolha sua pizza:</label>
+            <select id="pizza" name="pizza">
+                <option value="margherita">Pizza Margherita</option>
+                <option value="pepperoni">Pizza Pepperoni</option>
+                <option value="frangocatupiry">Pizza Frango com Catupiry</option>
+
+            </select>
+
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <button type="button" onclick="submitOrder()">Finalizar Pedido</button>
+        </form>
+    </main>
+
+    
+
+    <script src="../javascript/pedido.js"></script>
+</body>
+</html>
